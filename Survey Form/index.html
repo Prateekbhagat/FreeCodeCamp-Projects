@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="photo">
+        <header id="start">
+            <nav>
+                <img class="logo"
+                    src="data:image/jpeg;base64,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"
+                    alt="BMW Logo">
+                <ul>
+                    <li><a href="#start">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#order">Book Online</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <div class="about">
+                <h1 id="title">About Us</h1>
+                <p id="description">Bayerische Motoren Werke Aktiengesellschaft commonly referred to as BMW, is a
+                    German
+                    multinational corporation which produces luxury vehicles and motorcycles headquartered in Munich,
+                    Germany.
+                    The corporation was founded in 1916 as a manufacturer of aircraft engines, which it produced from
+                    1917 until
+                    1918 and again from 1933 to 1945. <br><br> Automobiles are marketed under the brands BMW, Mini and
+                    Rolls-Royce, and motorcycles are marketed under the brand BMW Motorrad. In 2017, BMW was the world's
+                    fourteenth-largest producer of motor vehicles, with 2,279,503 vehicles produced.[3] The company has
+                    significant motorsport history, especially in touring cars, Formula 1, sports cars and the Isle of
+                    Man TT.
+                </p>
+            </div>
+
+            <hr>
+            <div id="order">
+                <h3 class="order">Place Order</h3>
+                <p class="subtitle">Thank you for taking the time to help us improve the platform</p>
+                <form id="survey-form" action="">
+                    <label for="name-label">Name</label><br>
+                    <input type="text" name="name" id="name-label" placeholder="Enter your name"><br><br>
+                    <label for="email-label">Email</label><br>
+                    <input type="email" name="email" id="email-label" placeholder="Enter your Email"><br><br>
+                    <label for="number-label">Contact No.</label><br>
+                    <input type="number" name="number" id="number-label" placeholder="Enter your number"><br>
+                    <br>
+                    <label for="age">Age (Optional)</label><br>
+                    <input type="number" name="age" id="age" placeholder="Enter your age"><br><br>
+                    <label for="gender">Gender</label><br>
+
+                    <div class="set">
+                        <input type="radio" name="gender" id="gender">Male
+                        <input type="radio" name="gender" id="gender">Female
+                        <input type="radio" name="gender" id="gender">Other<br><br>
+                    </div>
+                    <div id="checkbox">
+                    <label for="checkbox">Are you Eligible ?</label>
+                    <input type="checkbox" name="checkbox" id="checkbox" > Yes I am Eligible.
+                </div>
+                    <label for="bike">BMW Bikes</label><br>
+                    <select  name="bike" id="dropdown">
+                        <option value="g310R">BMW G 310 R</option>
+                        <option value="g310GS">BMW G 310 GS</option>
+                        <option value="S1000RR">BMW S 1000 RR</option>
+                        <option value="R1250GS">BMW R 1250 GS</option>
+                        <option value="R1250GSAdventure" selected>BMW R 1250 GS Adventure</option>
+                        <option value="nineT">BMW R nineT</option>
+                        <option value="M1000RR">BMW M 1000 RR
+                        </option>
+                    </select><br><br>
+                    <label for="cars">BMW Cars</label><br>
+                    <select name="cars" id="cars">
+                        <option value="BMW X3">BMW X3</option>
+                        <option value="BMW X4">BMW X4</option>
+                        <option value="BMW X5">BMW X5</option>
+                        <option value="BMW 5 Series">BMW 5 Series</option>
+                        <option value="BMW X6">BMW X6</option>
+                        <option value="BMW X6 Series" selected>BMW X6 Series</option>
+                        <option value="BMW X7">BMW X7</option>
+                    </select><br><br>
+                    <label for="description">Description</label><br>
+                    <textarea name="description" id="description" cols="50" rows="2"></textarea><br><br>
+                    <button class="btn" id="submit" type="submit">Submit</button>
+                    <button class="btn" type="reset">Reset</button>
+                </form>
+            </div>
+            <hr>
+            <h3 id="contact">Contact Us</h3>
+            <p class="subtitle">Fill up the form</p>
+            <div>
+                <form action="">
+                    <label for="name-label">Name</label><br>
+                    <input type="text" name="name" id="name-label" placeholder="Enter your name"><br><br>
+                    <label for="email-label">Email</label><br>
+                    <input type="email" name="email" id="email-label" placeholder="Enter your Email"><br><br>
+                    <label for="number-label">Contact No.</label><br>
+                    <input type="number" name="number" id="number-label" placeholder="Enter your number"><br><br>
+                    <label for="description">Description</label><br>
+                    <textarea name="description" id="" cols="50" rows="2"></textarea><br><br>
+                    <button class="btn" id="submit" type="submit">Send</button>
+                    <button class="btn" type="reset">Reset</button>
+                </form>
+            </div>
+            <hr>
+        </main>
+        <footer>
+            <p class="one">Copyright &copy; 2020 - 2021 BMW Motor's</p>
+            <p class="two">By : Prateek Bhagat</p>
+        </footer>
+</body>
+
+</html>
