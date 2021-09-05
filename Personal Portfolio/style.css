@@ -1,27 +1,89 @@
-@import 'Utilities.css';
-:root{
-    --primary:#3DCFD3;
-    --dark:#161616;
-    --pure:#FFFFFF;
-    --ternary:#898989;
-    --light:#f2f2f2;    
-}
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box
-    -webkit-font-smotthing-antialiased;
 }
-header{
-    background-color: var(--dark);
-    height: 400px;
+.navigation{
+    display: flex;
+    background-color: rgb(14, 41, 92);
+    height: 50px;
+    color: white;
 }
-.container {
-    max-width: 1152px;
-    padding: 0  15px;
-    margin: 0 auto;
+.navigation h3{
+    display: flex;
+    margin: 14px 0px 16px 200px;
 }
-header nav .left a{
-    color: var(--pure);
-    text-decoration: none;
+.navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 400px;
+}
+.navigation ul li{
+    display: flex;
+    list-style: none;
+    margin-left: 40px;
+    border: 1px solid black;
+    padding: 3px 5px;
+    border-radius: 20px;
+}
+.navigation ul li:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgba(20, 46, 116, 0.938);
+    color: white;
+}
+
+/* ======================== Social ======================== */
+.conatiner{
+    height: 350px;
+}
+.social{
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 50px;
+    height: 340px;
+    border-radius: 40px;
+    position: relative;
+    top: 220px;
+    left: 25px;
+}
+.social a{
+    padding: 18px 2px;
+}
+.social a img{
+    filter: grayscale(100%);
+}
+.social a img:hover{
+    filter: grayscale(0);
+}
+
+/* ========================== About ======================= */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 504px;
+    height: 270px;
+    position: relative;
+    bottom: 55px;
+    left: 200px;
+    padding: 10px;
+}
+.about .p1{
+    font-size: 35px;
+    color: rgb(4, 156, 98);
+    line-height: 50px;
+}
+.about .p2{
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(4, 156, 98);
+    line-height: 40px;
+}
+.about .p3{
+    font-weight: bold;
+}
+.about .p4{
+    font-weight: lighter;
 }
